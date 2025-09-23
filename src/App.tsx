@@ -1,12 +1,11 @@
 import './App.css'
+import Header from './components/header'
 
 function App() {
 
   return (
     <>
-      <div className='Header'>
-        <h1>Complete signal</h1>
-      </div>
+      <Header />
     </>
   )
 }
