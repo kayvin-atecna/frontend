@@ -1,18 +1,19 @@
+import { Routes, Route } from "react-router-dom";
 import './App.css'
-import Header from '@/components/header'
-import Button from '@/components/button'
+import HomePage from "@/pages/HomePage";
+import MapPage from "./pages/MapPage";
+import TrackPage from "./pages/TrackPage";
+import CameraPage from "./pages/CameraPage";
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <div className='wrapper'>
-        <Button children="Voir la carte" />
-        <Button children="Suivre mon parcours" />
-        <Button children="Signaler des déchets sauvages" />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/map" element={<MapPage />} />
+      <Route path="/track" element={<TrackPage />} />
+      <Route path="/camera" element={<CameraPage />} />
+    </Routes>
   )
 }
 
