@@ -84,7 +84,6 @@ button:focus-visible {
 .header {
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid black;
   font-size: 24px;
 }
 
