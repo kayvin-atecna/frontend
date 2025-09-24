@@ -9,7 +9,9 @@
     "types": ["vite/client"],
     "isolatedModules": true,
     "baseUrl": ".",
-    "paths": { "@/": ["./frontend/src"] },
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
