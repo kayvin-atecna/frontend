@@ -98,7 +98,7 @@ ul {
   justify-content: center;
   flex: 1;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 
 .btn {
@@ -128,4 +128,17 @@ ul {
 .btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
 }
