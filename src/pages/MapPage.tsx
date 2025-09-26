@@ -8,7 +8,6 @@ export default function MapPage() {
   const navigate = useNavigate();
   const position: [number, number] = [50.6636678, 3.1247847];
 
-  // Custom marker icon
   const customIcon = L.icon({
     iconUrl: "/blue-circle.svg",  // put your image in /public
     iconSize: [16, 16],           // size of the icon
