@@ -14,6 +14,8 @@ Frontend de l’application **Complete Signal** (POC).
 * [React Router DOM 7](https://reactrouter.com/) – Bibliothèque de routage  côté client et côté serveur
 * [Node.js 22](https://nodejs.org/) – Runtime nécessaire pour lancer le projet
 * [pnpm](https://pnpm.io/) – Gestionnaire de paquets
+* [Leaflet](https://leafletjs.com/) – Bibliothèque de cartographie open-source
+* [React Leaflet](https://react-leaflet.js.org/) – Intégration de Leaflet avec React pour afficher des cartes interactives
 
 ---
 
