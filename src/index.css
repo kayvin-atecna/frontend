@@ -142,3 +142,36 @@ ul {
 .leaflet-bottom.leaflet-right {
   display: none;
 }
+
+/* CameraPage specific styles */
+/* 
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.camera-video {
+  // width: 300px;
+  height: auto;
+  background: black;
+  border-radius: 8px;
+  display: block;
+
+  object-fit: cover;
+  width: "100%";
+  maxHeight: "400px";
+  objectFit: "cover";
+  background: "black";
+  display: "block";
+}
+
+.camera-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 300px;
+}
+ */
