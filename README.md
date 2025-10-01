@@ -6,7 +6,14 @@ Frontend de l’application **Complete Signal** (POC).
 
 ---
 
-## 1) Stack
+## 1) Prérequis
+
+* Installer [Node.js](https://nodejs.org/fr) **(20.x)**
+* Installer [pnpm](https://pnpm.io/installation) globalement
+
+---
+
+## 2) Stack
 
 * [React 19](https://react.dev/) – UI moderne, basée sur les hooks et composants fonctionnels
 * [TypeScript 5](https://www.typescriptlang.org/) – Typage statique robuste
@@ -16,15 +23,6 @@ Frontend de l’application **Complete Signal** (POC).
 * [pnpm](https://pnpm.io/) – Gestionnaire de paquets
 * [Leaflet](https://leafletjs.com/) – Bibliothèque de cartographie open-source
 * [React Leaflet](https://react-leaflet.js.org/) – Intégration de Leaflet avec React pour afficher des cartes interactives
-
----
-
-## 2) Prérequis
-
-* Node.js **20.x**
-* `pnpm` installé globalement
-
-Backend dispo sur : [http://localhost:8000](http://localhost:8000)
 
 ---
 
@@ -58,7 +56,7 @@ VITE_API_BASE=/api
 
 ---
 
-## 🔗 5) Connexion au backend
+## 5) Connexion au backend
 
 **Vite** est configuré pour proxyfier les appels API vers FastAPI et unifie les URLs côté frontend.
 
@@ -94,13 +92,15 @@ Proxy → `http://localhost:8000/...`
 ```
 frontend/
 ├── src/
-│   ├── components/      # Composants UI réutilisables (Button, Header…)
-│   ├── pages/           # Pages correspondant aux routes React Router (HomePage, CameraPage…)
-│   ├── hooks/           # Hooks personnalisés (ex: useUserMedia)
+│   ├── api/             # Accès backend: client HTTP et fonctions endpoints
+│   ├── components/      # Composants UI réutilisables
+│   ├── pages/           # Pages correspondant aux routes React Router
+│   ├── hooks/           # Hooks personnalisés
+│   ├── types/           # Types
 │   ├── App.tsx          # Définition des routes
-│   ├── main.tsx         # Entrée principale (ReactDOM + BrowserRouter)
+│   ├── main.tsx         # Entrée principale
 │   └── index.css        # Styles globaux
-├── public/              # Fichiers statiques (favicon, manifest…)
+├── public/              # Fichiers statiques
 ├── .env.development     # Variables d'env en dev
 ├── .env.production      # Variables d'env en prod
 ├── vite.config.ts       # Config Vite
